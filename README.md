@@ -1,6 +1,6 @@
 # Créer un site WEB
 
-## HTML / ( CSS? )
+## HTML / CSS / JS
 
 ### Sujet du site WEB
 
