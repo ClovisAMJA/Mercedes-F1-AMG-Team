@@ -17,12 +17,19 @@
   color: white;
   text-shadow: 2px 2px 4px #000000;
 }
-table{
+.table{
   margin: auto;
   border: 2px solid aqua;
   padding: 10px;
   display: inline-block;
   empty-cells: hide;
-  
+  text-align: center;
 }
+.th{
+  border-bottom: 2px solid aqua;
+  text-shadow: 2px 2px 4px #09bbac;
+  color: white;
+  padding: 0px 10px;
+}
+
 
