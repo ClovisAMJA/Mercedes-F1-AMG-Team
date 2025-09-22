@@ -33,7 +33,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; 
+  background-attachment: local; 
   color: rgb(19, 18, 18);
   border-radius: 10%;
   
@@ -44,7 +44,7 @@
   border-left: #09bbac 4px solid;
   border-radius: 10%;
   margin: 20px auto;
-  padding: 10px;
+  padding: 12px;
   display: inline-block;
   font-family: "Playfair Display", Gadget, serif;
   color: rgb(197, 197, 197);
@@ -91,35 +91,42 @@
   backdrop-filter: blur(2px);
   
 }
-.details{
+.details {
   text-align: justify;
   border: 1px groove silver;
   border-bottom: 4px groove aqua;
   border-left: 4px groove aqua;
   border-radius: 10%;
-  color: white;
   padding: 0px 10px;
-  margin: 20px ;
+  margin: 20px;
   width: fit-content;
   background-color: rgba(0, 0, 0, 0.5); 
   backdrop-filter: blur(2px); 
+  color: white;
+  
 }
+.details summary, a {
+  background: linear-gradient(to right, #30CFD0 0%, #c4c3c3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .puces {
-  list-style: none;    /* supprime les puces natives */
-  padding-left: 0;     /* enlève le retrait par défaut */
+  list-style: none;
+  padding-left: 0;
 }
 
 .puces li::before {
   content: "";
   display: inline-block;
-  width: 25px;   /* taille de la puce */
+  width: 25px;
   height: 25px;
   margin-right: 6px;
   background: url("images/logo_merco.png") no-repeat center;
-  background-size: contain; /* adapte l’image à la taille */
+  background-size: contain;
 }
-.nav a : normal {
-  color: white;
+
+.details a:link, a:visited {
   text-decoration: none;
-  
 }
