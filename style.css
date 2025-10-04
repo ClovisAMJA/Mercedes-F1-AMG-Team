@@ -1,0 +1,92 @@
+/*STYLE CSS*//*---------------------------------------------------*/
+/*Style du body*//*-----------------------------------------------*/
+body
+{
+    background-color: black;
+    color: white;
+}
+/*Style du header*//*---------------------------------------------*/
+header
+{
+    /*positionnement et gabarit*/
+    position:relative;
+    top:0;
+    height: 200px;
+    /*Style du bloc*/
+    border-radius: 2em;
+    border: 1px silver solid;
+    box-shadow: 5px 5px aqua;
+    background-size: 90%;
+    object-position: center right;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70%;/* largeur de la partie droite */
+  height: 100%;
+  background-image: url('images/Lewis2020.jpg');
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+  z-index: 1;
+}
+
+/* Contenu du header au-dessus du pseudo-élément */
+header * {
+  position: relative;
+  z-index: 2;
+}
+header > h1
+{
+    /*Positionnement et gabarit*/
+    display: inline-flex;
+    padding-left: 0.2em;
+    
+    /*Style du bloc*/
+    background-color: linear-gradient(right,black,silver);
+    font-family: "Times New Roman",times, serif;
+    font-size: 4em;
+    color:rgb(173, 173, 173);
+}
+
+/*Style du main*//*-----------------------------------------------*/
+main
+{
+
+}
+/*Style du footer*//*---------------------------------------------*/
+footer
+{
+
+}
+/*Style du menu*//*-----------------------------------------------*/
+details
+{
+
+}
+/*Style de la section*//*-----------------------------------------*/
+section
+{
+
+}
+/*Style de l'article*//*------------------------------------------*/
+article
+{
+
+}
+/*Style du paragraphe*//*-----------------------------------------*/
+p
+{
+
+}
+/*Style du titre*//*----------------------------------------------*/
+h1
+{
+
+}
