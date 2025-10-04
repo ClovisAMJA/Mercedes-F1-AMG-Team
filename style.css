@@ -13,7 +13,7 @@ header
     top:0;
     height: 200px;
     /*Style du bloc*/
-    border-radius: 2em;
+    border-radius: 1em;
     border: 1px silver solid;
     box-shadow: 5px 5px aqua;
     background-size: 90%;
@@ -31,7 +31,7 @@ header::after {
   background-image: url('images/Lewis2020.jpg');
   background-size: cover;
   background-position: center;
-  border-top-right-radius: 2em;
+  border-top-right-radius: 1em;
   border-bottom-right-radius: 2em;
   clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
   z-index: 1;
@@ -53,6 +53,23 @@ header > h1
     font-family: "Times New Roman",times, serif;
     font-size: 4em;
     color:rgb(173, 173, 173);
+}
+header > details
+{
+    /*Positionnement et gabarit du bloc*/
+    display:flex;
+    flex-direction: row;
+    /*Style du bloc*/
+    border:1px silver solid;
+    border-radius: 1em;
+    box-shadow: 5px 5px aqua;
+}
+header > details > li
+{
+    /*Positionnement et gabarit du bloc*/
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 /*Style du main*//*-----------------------------------------------*/
