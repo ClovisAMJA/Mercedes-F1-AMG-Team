@@ -57,8 +57,8 @@ header > h1
 header > details
 {
     /*Positionnement et gabarit du bloc*/
-    display:flex;
-    flex-direction: row;
+    position : sticky;
+    top:0;
     /*Style du bloc*/
     border:1px silver solid;
     border-radius: 1em;
