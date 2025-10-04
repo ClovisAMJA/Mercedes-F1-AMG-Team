@@ -59,17 +59,11 @@ header > details
     /*Positionnement et gabarit du bloc*/
     position : sticky;
     top:0;
+    display: flex;
     /*Style du bloc*/
     border:1px silver solid;
     border-radius: 1em;
     box-shadow: 5px 5px aqua;
-}
-header > details > li
-{
-    /*Positionnement et gabarit du bloc*/
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-around;
 }
 
 /*Style du main*//*-----------------------------------------------*/
