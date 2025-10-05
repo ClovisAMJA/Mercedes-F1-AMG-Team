@@ -59,43 +59,36 @@ header > h1
     /*Positionnement et gabarit du bloc*/
     position:sticky;
     top:0;
+    z-index: 1000;
     text-align: center;
     padding: 0;
+    margin-bottom: 10px;
     /*Style du bloc*/
     border:1px silver solid;
     box-shadow: 5px 5px aqua;
     border-radius: 1em;
+    background-image:url(images/background_menu.jpg);
+    background-size: cover;
+    background-position: center;
 }
 details summary {
     list-style: none; /* supprime le triangle par défaut */
     cursor: pointer;
     padding-left: 25px; /* laisse de la place pour l'image */
     position: relative;
-    text-align: center;
+    color: silver;
+    text-align: justify;
+    font-size: 1.5em;
 }
-
-/* Ajouter l'image avant le texte du summary */
-details summary::before {
-    content: "";
-    position: absolute;
-    left: 630px;
-    align-items: center;
-    top: 50%;
-    transform: translateY(-30%);
-    width: 30px; /* largeur de l'image */
-    height: 30px; /* hauteur de l'image */
-    background-image: url("images/logo_merco.png"); /* chemin de ton image */
-    background-size: contain;
-    background-repeat: no-repeat;
-    text-align: center;
+details > nav
+{
+    background-color: rgba(0,0,0,0.3);
 }
-
-/* Changer l'image quand details est ouvert */
-details[open] summary::before {
-    text-align: center;
-    background-image: url("images/logo_merco.png"); /* image pour état ouvert */
+details > summary > a
+{
+    float: right;
+    right:10px;
 }
-
 .ul
 {
     /*Positionnement et gabarit du bloc*/
@@ -105,7 +98,6 @@ details[open] summary::before {
     /*Style du bloc*/
     list-style-type: none;
     border-radius: 1em;
-    background: linear-gradient(to right,rgb(30, 78, 78),rgb(23, 114, 114));
     padding: 1rem;
     clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
     z-index: 2;
@@ -121,7 +113,6 @@ details[open] summary::before {
     list-style-type: none;
     border-bottom-left-radius: 1em;
     border-radius: 1em;
-    background: linear-gradient(to right,rgb(30, 78, 78),rgb(23, 114, 114));
     padding: 1rem;
     clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
     z-index: 2;
@@ -136,7 +127,6 @@ details[open] summary::before {
     /*Style du bloc*/
     list-style-type: none;
     border-radius: 1em;
-    background: linear-gradient(to right,rgb(30, 78, 78),rgb(23, 114, 114));
     padding: 1rem;
     clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
     z-index: 2;
@@ -152,8 +142,54 @@ a:hover
 /*Style du main*//*-----------------------------------------------*/
 main
 {
+    /*Positionneent et gabarit du bloc*/
+    background-color: black;
+    margin-top: 20px;
+    position: relative;
+    /*Style du bloc*/
+    border-radius: 1em;
+    border: 1px silver solid;
+    box-shadow: 5px 5px aqua;
 
 }
+article
+{
+    /*positionnement et gabarit*/
+    position:relative;
+    top:0;
+    height: 400px;
+    margin-bottom: 7px;
+    /*Style du bloc*/
+    border-radius: 1em;
+    border: 1px silver solid;
+    box-shadow: 5px 5px aqua;
+    background-size: 90%;
+    object-position: center right;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+article::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 60%;/* largeur de la partie droite */
+    height: 100%;
+    background-image: url('images/succes_merco.jpg');
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+    z-index: 1;
+}
+
+/* Contenu du header au-dessus du pseudo-élément */
+article * {
+    position: relative;
+    z-index: 2;
+}
+
 /*Style du footer*//*---------------------------------------------*/
 footer
 {
