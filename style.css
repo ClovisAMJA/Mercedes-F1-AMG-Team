@@ -23,25 +23,25 @@ header
     background-position: center;
 }
 header::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 70%;/* largeur de la partie droite */
-  height: 100%;
-  background-image: url('images/Lewis2020.jpg');
-  background-size: cover;
-  background-position: center;
-  border-top-right-radius: 1em;
-  border-bottom-right-radius: 2em;
-  clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
-  z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;/* largeur de la partie droite */
+    height: 100%;
+    background-image: url('images/Lewis2020.jpg');
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+    z-index: 1;
 }
 
 /* Contenu du header au-dessus du pseudo-élément */
 header * {
-  position: relative;
-  z-index: 2;
+    position: relative;
+    z-index: 2;
 }
 header > h1
 {
@@ -49,23 +49,105 @@ header > h1
     display: inline-flex;
     padding-left: 0.2em;
     /*Style du bloc*/
-    background-color: linear-gradient(right,black,silver);
     font-family: "Times New Roman",times, serif;
     font-size: 4em;
     color:rgb(173, 173, 173);
 }
-header > details
+.details
 {
     /*Positionnement et gabarit du bloc*/
-    position : sticky;
+    position:sticky;
     top:0;
-    display: flex;
+    text-align: center;
+    padding: 0;
     /*Style du bloc*/
     border:1px silver solid;
-    border-radius: 1em;
     box-shadow: 5px 5px aqua;
+    border-radius: 1em;
+}
+details summary {
+    list-style: none; /* supprime le triangle par défaut */
+    cursor: pointer;
+    padding-left: 25px; /* laisse de la place pour l'image */
+    position: relative;
+    text-align: center;
 }
 
+/* Ajouter l'image avant le texte du summary */
+details summary::before {
+    content: "";
+    position: absolute;
+    left: 630px;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-30%);
+    width: 30px; /* largeur de l'image */
+    height: 30px; /* hauteur de l'image */
+    background-image: url("images/logo_merco.png"); /* chemin de ton image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+/* Changer l'image quand details est ouvert */
+details[open] summary::before {
+    text-align: center;
+    background-image: url("images/logo_merco.png"); /* image pour état ouvert */
+}
+
+.ul
+{
+    /*Positionnement et gabarit du bloc*/
+    display:inline-block;
+    width: 180px;
+    margin:0;
+    /*Style du bloc*/
+    list-style-type: none;
+    border-radius: 1em;
+    background: linear-gradient(to right,rgb(30, 78, 78),rgb(23, 114, 114));
+    padding: 1rem;
+    clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+    z-index: 2;
+}
+.ul1
+{
+    /*Positionnement et gabarit du bloc*/
+    display:inline-block;
+    width: 180px;
+    margin:0;
+    margin-left: 0;
+    /*Style du bloc*/
+    list-style-type: none;
+    border-bottom-left-radius: 1em;
+    border-radius: 1em;
+    background: linear-gradient(to right,rgb(30, 78, 78),rgb(23, 114, 114));
+    padding: 1rem;
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+    z-index: 2;
+}
+.ul2
+{
+    /*Positionnement et gabarit du bloc*/
+    display:inline-block;
+    width: 180px;
+    margin:0;
+    margin-right: 0;
+    /*Style du bloc*/
+    list-style-type: none;
+    border-radius: 1em;
+    background: linear-gradient(to right,rgb(30, 78, 78),rgb(23, 114, 114));
+    padding: 1rem;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+    z-index: 2;
+}
+a:link,a:visited
+{
+    color: white;
+}
+a:hover
+{
+    color:silver;
+}
 /*Style du main*//*-----------------------------------------------*/
 main
 {
