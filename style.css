@@ -13,6 +13,7 @@ header
     position:relative;
     top:0;
     height: 200px;
+    margin-bottom: 7px;
     /*Style du bloc*/
     border-radius: 1em;
     border: 1px silver solid;
