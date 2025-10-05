@@ -17,7 +17,7 @@ header
     /*Style du bloc*/
     border-radius: 1em;
     border: 1px silver solid;
-    box-shadow: 5px 5px aqua;
+    box-shadow: 3px 3px aqua;
     background-size: 90%;
     object-position: center right;
     background-repeat: no-repeat;
@@ -65,7 +65,7 @@ header > h1
     margin-bottom: 10px;
     /*Style du bloc*/
     border:1px silver solid;
-    box-shadow: 5px 5px aqua;
+    box-shadow: 3px 3px aqua;
     border-radius: 1em;
     background-image:url(images/background_menu.jpg);
     background-size: cover;
@@ -149,8 +149,18 @@ main
     /*Style du bloc*/
     border-radius: 1em;
     border: 1px silver solid;
-    box-shadow: 5px 5px aqua;
+    box-shadow: 3px 3px aqua;
 
+}
+h2
+{
+    background-color: black;
+    text-align: center;
+    width: inherit;
+    margin:0;
+    margin-bottom: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
 }
 article
 {
@@ -158,11 +168,13 @@ article
     position:relative;
     top:0;
     height: 400px;
+    margin-top:0;
     margin-bottom: 7px;
     /*Style du bloc*/
     border-radius: 1em;
     border: 1px silver solid;
-    box-shadow: 5px 5px aqua;
+    border-top: 2px silver solid;
+    box-shadow: 3px 3px aqua;
     background-size: 90%;
     object-position: center right;
     background-repeat: no-repeat;
@@ -189,7 +201,51 @@ article * {
     position: relative;
     z-index: 2;
 }
+.article2
+{
+    /*positionnement et gabarit*/
+    display:flex;
+    flex-direction: row-reverse;
+    top:0;
+    height: 400px;
+    margin-top:0;
+    margin-bottom: 7px;
+    /*Style du bloc*/
+    border-radius: 1em;
+    border: 1px silver solid;
+    box-shadow: 3px 3px aqua;
+    background-size: 90%;
+    object-position: center right;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.article2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 60%;/* largeur de la partie droite */
+    height: 100%;
+    background-image: url('images/echec_merco.jpg');
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+    z-index: 1;
+}
 
+/* Contenu du header au-dessus du pseudo-élément */
+.article2 * {
+    position: relative;
+    z-index: 2;
+}
+.article2 > h3
+{
+    position: relative;
+    top:3px;
+    right:3px;
+}
 /*Style du footer*//*---------------------------------------------*/
 footer
 {
