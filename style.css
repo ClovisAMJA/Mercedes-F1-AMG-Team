@@ -171,6 +171,7 @@ article
     height: 400px;
     margin-top:0;
     margin-bottom: 7px;
+    font-size: 1.2em;
     /*Style du bloc*/
     border-radius: 1em;
     border: 1px silver solid;
@@ -210,6 +211,7 @@ article > h3
     padding:2px;
     background-color: silver;
     width: 40%;
+    text-align: center;
     border-radius: 1em;
 }
 article > p
@@ -229,6 +231,7 @@ article > p
     height: 400px;
     margin-top:0;
     margin-bottom: 7px;
+    font-size: 1.2em;
     /*Style du bloc*/
     border-radius: 1em;
     border: 1px silver solid;
@@ -245,7 +248,7 @@ article > p
     left:0;
     width: 57%;/* largeur de la partie droite */
     height: 100%;
-    background-image: url('images/echec_merco.jpg');
+    background-image: url('images/reve_mercedes.jpg');
     background-size: cover;
     background-position: center;
     border-top-left-radius: 1em;
@@ -266,6 +269,7 @@ article > p
     right:3px;
     padding:2px;
     background-color: silver;
+    text-align: center;
     width: 40%;
     border-radius: 1em;
 }
@@ -285,10 +289,65 @@ article >ul > li {
     padding-left: 0;        /* enlever l'espace réservé au marker */
     margin: 0;
 }
+.article3
+{
+    /*positionnement et gabarit*/
+    position:relative;
+    top:0;
+    padding:1em;
+    height: 400px;
+    margin-top:0;
+    margin-bottom: 7px;
+    font-size: 1.2em;
+    /*Style du bloc*/
+    border-radius: 1em;
+    border: 1px silver solid;
+    border-top: 2px silver solid;
+    box-shadow: 3px 3px aqua;
+    background-size: 90%;
+    object-position: center right;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.article3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 60%;/* largeur de la partie droite */
+    height: 100%;
+    background-image: url('images/equipe_merco.jpg');
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+    z-index: 1;
+}
+
+/* Contenu du header au-dessus du pseudo-élément */
+.article3 * {
+    position: relative;
+    z-index: 2;
+}
+.article3 > h3
+{
+    position: relative;
+    top:3px;
+    right:3px;
+    padding:2px;
+    background-color: silver;
+    width: 40%;
+    text-align: center;
+    border-radius: 1em;
+}
+
 
 /*Style du footer*//*---------------------------------------------*/
 footer
 {
+    position:sticky;
+    bottom:0;
 
 }
 
