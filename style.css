@@ -167,6 +167,7 @@ article
     /*positionnement et gabarit*/
     position:relative;
     top:0;
+    padding:1em;
     height: 400px;
     margin-top:0;
     margin-bottom: 7px;
@@ -201,11 +202,29 @@ article * {
     position: relative;
     z-index: 2;
 }
+article > h3
+{
+    position: relative;
+    top:3px;
+    right:3px;
+    padding:2px;
+    background-color: silver;
+    width: 40%;
+    border-radius: 1em;
+}
+article > p
+{
+    padding-left: 20px;
+}
 .article2
 {
     /*positionnement et gabarit*/
+    position: relative;
     display:flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: end;
+    right:0;
     top:0;
     height: 400px;
     margin-top:0;
@@ -224,7 +243,7 @@ article * {
     position: absolute;
     top: 0;
     left:0;
-    width: 60%;/* largeur de la partie droite */
+    width: 57%;/* largeur de la partie droite */
     height: 100%;
     background-image: url('images/echec_merco.jpg');
     background-size: cover;
@@ -245,11 +264,28 @@ article * {
     position: relative;
     top:3px;
     right:3px;
+    padding:2px;
+    background-color: silver;
+    width: 40%;
+    border-radius: 1em;
 }
 .article2 > p
 {
-    display:block;
+    padding-right:20px;
 }
+article >ul > li {
+    list-style: none;       /* classique, mais parfois le marker persiste */
+    marker: none;           /* supprime le marker dans les navigateurs modernes */
+    padding-left: 0;        /* enlever l'espace réservé au marker */
+    margin: 0;
+}
+.article2 >ul > li {
+    list-style: none;       /* classique, mais parfois le marker persiste */
+    marker: none;           /* supprime le marker dans les navigateurs modernes */
+    padding-left: 0;        /* enlever l'espace réservé au marker */
+    margin: 0;
+}
+
 /*Style du footer*//*---------------------------------------------*/
 footer
 {
