@@ -5,7 +5,17 @@ header::after
     background-repeat: no-repeat;
     
 }
-main > section 
+main section 
 {
+    margin: auto;
+    width: max-content;
     text-align: center;
 }
+main section > table
+{
+    border-collapse: separate;
+    border-spacing: 4px;
+    font-size: 1.2em;
+    vertical-align: baseline;
+}
+

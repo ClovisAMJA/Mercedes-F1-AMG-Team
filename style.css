@@ -343,8 +343,10 @@ article >ul > li {
 }
 table{
     border: 2px silver solid;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 2px;
     border-radius: 1em;
+    width: fit-content;
 }
 
 /*Style du footer*//*---------------------------------------------*/
@@ -352,6 +354,9 @@ footer
 {
     position:sticky;
     bottom:0;
-
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    border-radius: 1em;
 }
 
