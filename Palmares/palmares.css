@@ -1,5 +1,11 @@
-header::after
+header::after 
 {
-    background-image: url("../images/palmarès_mercedes.jpg");
-    height: 100%;
+    background-image: url("../images/palmarès_merco.jpg");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    
+}
+main > section 
+{
+    text-align: center;
 }

@@ -341,7 +341,11 @@ article >ul > li {
     text-align: center;
     border-radius: 1em;
 }
-
+table{
+    border: 2px silver solid;
+    border-collapse: collapse;
+    border-radius: 1em;
+}
 
 /*Style du footer*//*---------------------------------------------*/
 footer
