@@ -5,6 +5,11 @@ body
     background-color: black;
     color: white;
     position: relative;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+body h1,body h2
+{
+    font-family: "Exo 2",Times, sans-serif;
 }
 /*Style du header*//*---------------------------------------------*/
 header
